@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS bootstrap  -->
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
+  <!-- my CSS -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- D3 CDNjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js" ></script>
+  <!-- topoJSON -->
+  <script src="https://d3js.org/topojson.v1.js" ></script>
+
+  <!-- ReactDOM CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Babel Stand-alone -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script> 
+  <!-- Doc's title -->
+  <title>Choropleth Map</title>
+</head>
+<body>
+  <button class="btn"><h1>Map Data Across the Globe</h1></button><br>
+  <h5>Zoom in/out | Hover over the data point for additional data</h5>
+  <div id="map"></div>
+  <div id="tooltip">
+    Name: <span id="name" class="info"></span><br> 
+    Nametype: <span id="nametype" class="info"></span><br>
+    Fall: <span id="fall" class="info"></span><br> 
+    Mass: <span id="mass" class="info"></span><br>  
+    Recclass: <span id="reclass" class="info"></span><br>  
+    Reclat: <span id="reclat" class="info"></span><br> 
+    Reclong: <span id="reclong" class="info"></span><br> 
+    Year: <span id="year" class="info"></span>
+  </div>
+
+  <script src="./index.js"  type="text/babel"></script>
+</body>
+</html>
